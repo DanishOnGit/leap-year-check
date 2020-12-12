@@ -1,2 +1,3 @@
 # leap year check
- checks if user birth of year is a leap year
+ Checks if user birth of year is a leap year.
+ Made using nodeJS.
