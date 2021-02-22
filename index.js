@@ -1,17 +1,17 @@
-var chalk=require("chalk");
-var readlineSync=require("readline-sync");
+const chalk=require("chalk");
+const readlineSync=require("readline-sync");
 console.log(chalk.yellow("***Leap-year Checker***"))
-var userName=readlineSync.question(chalk.blue("\nEnter your name: "));
+const userName=readlineSync.question(chalk.blue("\nEnter your name: "));
 console.log(chalk.cyan("Hey "+userName.toUpperCase()+". Please enter your birth date below"))
 
 
 function yearCheck(){
-  var dob=readlineSync.question("\nEnter DOB in YYYY/MM/DD format: ")
+  let dob=readlineSync.question("\nEnter DOB in YYYY/MM/DD format: ")
 
-  var split=dob.split("/");
-  var year=split[0];
-  var month=split[1];
-  var date=split[2];
+  let split=dob.split("/");
+  let year=split[0];
+  let month=split[1];
+  let date=split[2];
 
   if(isNaN(year)||year<1000||year>9999){
     console.log(chalk.red("Please enter valid date of birth\n"))
